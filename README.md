@@ -4,10 +4,10 @@ Windows 7 32-bit kernel mode driver that demonstrates various techniques used by
 Features:
 - hook `tcpip.sys` to hide connections on given port
 - hook system services:
-  - NtWriteFile
-  - NtCreateFile
-  - NtQuerySystemInformation - hide process information
-  - NtOpenProcess - make it impossible to get a handle to the process
+  - `NtWriteFile`
+  - `NtCreateFile`
+  - `NtQuerySystemInformation` - hide process information
+  - `NtOpenProcess` - make it impossible to get a handle to the process
 - hook interrupt service routines
 - enable writing to read-only pages using `Control Register Zero` (`CR0`)
 - register callbacks to make it impossible to get a handle to the process or its threads
